@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "15.x"
+  },
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
@@ -34,8 +37,5 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "request": "^2.88.2"
-  },
-  "optionalDependencies" : {
-    "fsevents": "^2.3.1"
   }
 }
