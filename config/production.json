@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://wf1234:wf1234@cluster0.xao8w.mongodb.net/teacher-network?retryWrites=true&w=majority"
+}
