@@ -3,4 +3,5 @@ node_modules/
 notes.md
 node_modules
 config/default.json
+config/production.json
 regex.md
