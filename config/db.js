@@ -4,7 +4,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 const db =  process.env.mongoURI
 
-// config.get('mongoURI') ||
 
 const connectDB = async () => {
     try {

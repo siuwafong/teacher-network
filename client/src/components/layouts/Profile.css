@@ -1,0 +1,31 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.Profile__heading {
+    font-weight: 800;
+    text-align: center;
+}
+
+.Profile__pic {
+    max-width: 100px;
+}
+
+.Profile__label {
+    font-weight: 700;
+}
+
+.Profile li {
+    list-style-type: none;
+}
+
+@media (min-width: 1440px) {
+    .Profile {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+}
