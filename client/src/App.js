@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 import MainNavigation from './components/layouts/MainNavigation'
 import Auth from './components/pages/Auth'
 import Home from './components/pages/Home'
-import Profile from './components/pages/Profile'
+// import Profile from './components/pages/Profile'
 import NewPost from './components/pages/NewPost'
 import Users from './components/pages/Users'
 import EditProfile from './components/pages/EditProfile'
@@ -38,15 +38,15 @@ function App() {
         <Route path="/newpost">
           <NewPost />
         </Route>
-        <Route path="/editpost/:id">
+        <Route path="/posts/:id/edit">
           <EditPost />
         </Route>
-        <Route path="/:userId/editprofile">
+        <Route path="/editprofile/:profileId">
           <EditProfile />
         </Route>
-        <Route path="/:userId/profile">
+        {/* <Route path="/:userId/profile">
           <Profile />
-        </Route>
+        </Route> */}
 
       </Switch>
     )

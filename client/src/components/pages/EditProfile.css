@@ -1,0 +1,76 @@
+.profile-form {
+    list-style: none;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    background: white;
+  }
+
+.username {
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+.username-msg {
+    margin-top: 1px;
+    font-size: 0.7rem;
+}
+  
+.Profile__grade-label {
+    font-weight: 800;
+}
+
+.Profile__grade select {
+    margin-bottom: 10px;
+}
+
+.Profile__subjects-label {
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.Profile__subject {
+    margin-right: 20px;
+}
+
+.editProfileBtn {
+    margin-top: 10px;
+    display: flex;    
+}
+
+.Profile__friends-msg {
+    color: red;
+}
+
+.friend-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friendBtn {
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    height: 40px;
+    font-family: "Montserrat";
+    outline: none;
+    width: 80px;
+    cursor: pointer;
+}
+
+.addFriendBtn {
+    background-color: greenyellow;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    height: 40px;
+    font-family: "Montserrat";
+    outline: none;
+    width: 80px;
+    cursor: pointer;
+    margin-right: 10px;
+}

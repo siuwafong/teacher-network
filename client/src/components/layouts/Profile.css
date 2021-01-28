@@ -5,6 +5,10 @@
     width: 300px;
 }
 
+.Profile p {
+    margin: 4px auto;
+}
+
 .Profile__heading {
     font-weight: 800;
     text-align: center;
