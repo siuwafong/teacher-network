@@ -3,6 +3,7 @@ import './PostsList.css'
 import Card from '../UIElements/Card'
 import Button from '../UIElements/Button'
 import Post from './Post'
+import { v4 as uuidv4 } from 'uuid'
 
 const PostsList = props => {
     if (props.items.length === 0 ) {
@@ -20,7 +21,8 @@ const PostsList = props => {
     <ul className="post-list">
         {props.items.map(post => (
             <Post
-                key={post.id}
+                shortenText={props.shortenText}
+                key={uuidv4()}
                 id={post.id}
                 title={post.title}
                 postContent={post.postContent}

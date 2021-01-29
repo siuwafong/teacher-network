@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../UIElements/Card'
 import './Profile.css'
 import Button from '../UIElements/Button'
+import { v4 as uuidv4 } from 'uuid'
 
 const Profile = props => {
 
@@ -27,7 +28,7 @@ const Profile = props => {
                 <p><span className="Profile__label">Name: </span>{`${DUMMY_PROFILE.firstName} ${DUMMY_PROFILE.lastName}`}</p>
                 <p><span className="Profile__label">Date Joined: </span>{DUMMY_PROFILE.joinDate} </p>
                 <p><span className="Profile__label">Grades: </span>{DUMMY_PROFILE.gradeLevel} </p>
-                <p><span className="Profile__label">Subjects: </span>{DUMMY_PROFILE.subjects.map(subject => (<div>{subject}</div>))} </p>
+                <div><span className="Profile__label">Subjects: </span>{DUMMY_PROFILE.subjects.map(subject => (<div key={uuidv4()}>{subject}</div>))} </div>
                 <Button to="/editprofile/:id">
                     EDIT PROFILE
                 </Button>

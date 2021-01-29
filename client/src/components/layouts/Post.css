@@ -59,6 +59,10 @@
   .post-item__actions a {
     margin: 0.5rem;
   }
+
+  .post-item__details {
+    border-top: 1px solid #ccc;
+  }
   
   @media (min-width: 768px) {
     .post-item__image {

@@ -6,6 +6,7 @@ import { useForm } from '../../hooks/form-hook'
 import { VALIDATOR_REQUIRE } from '../../utils/validators'
 import Card from '../UIElements/Card'
 import './EditProfile.css'
+import { v4 as uuidv4 } from 'uuid'
 
 
 const DUMMY_PROFILE = [
@@ -149,7 +150,7 @@ const EditProfile = props => {
                 <div className="Profile__grade-label">Grades</div>
                 <select name="grade" defaultValue={profileGradeLevel} onChange={e => onChangeHandler(e)}>
                     {grades.map(grade => (
-                        <option key={grade} value={grade} >{grade}</option>
+                        <option key={uuidv4()} value={grade} >{grade}</option>
                     ))}
                 </select>
             </div>
@@ -157,7 +158,7 @@ const EditProfile = props => {
             <div className="Profile__subjects">
                 <div className="Profile__subjects-label">Subjects</div>
                 {subjects.map(subject => (
-                    <div className="Profile__subject">
+                    <div className="Profile__subject" key={uuidv4()}>
                         <input type="checkbox" id={subject} value={subject} onChange={e => onChangeHandler(e)} checked={profileSubjects.includes(subject)} />
                         <label htmlFor={subject}>{subject}</label>
                     </div>
@@ -179,7 +180,7 @@ const EditProfile = props => {
                 :
                 (
                     profileFriends.map(friend => (
-                        <div className="friend-item">
+                        <div className="friend-item" key={uuidv4()}>
                         <p>{friend}</p>
                         <button className="friendBtn" onClick={() => friendHandler(friend, "delete")}>DELETE</button>
                         </div>
@@ -196,7 +197,7 @@ const EditProfile = props => {
             :
             (
                 profileFriendRequests.map(request => (
-                    <div className="friend-item">
+                    <div className="friend-item" key={uuidv4()}>
                         <p>{request}</p>
                         <div className="friendBtns">
                             <button className="addFriendBtn" onClick={() => friendHandler(request, "add")}>ADD</button>

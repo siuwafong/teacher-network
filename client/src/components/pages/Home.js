@@ -20,7 +20,7 @@ const Home = () => {
         {
             id: 'p2',
             title: "I need help",
-            postContent: "I'm overworked. Can anyone give me any ideas on how to destress?",
+            postContent: "I'm overworked. Can anyone give me any ideas on how to destress? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
             creator: 'u2',
             // link: 'www.google.ca'
         },
@@ -61,7 +61,7 @@ const Home = () => {
             <Profile className="Home-profile"/>
         }
             <h2 className="Home-title">Recent Posts</h2>
-            <PostsList items={DUMMY_POSTS}/>
+            <PostsList shortenText={true} items={DUMMY_POSTS}/>
     </div>
     )
 }

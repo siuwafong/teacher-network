@@ -44,7 +44,8 @@ const Post = props => {
                 <div className="post-item__info">
                     <h2>{props.title}</h2>
                     {props.link !== undefined && <div><span>Link: </span><a href={props.link}>{props.link}</a></div>}
-                    <p>{props.postContent}</p>
+                    <div><span>By: </span>{props.creatorId}</div>
+                    <p>{(props.postContent.length < 120 && props.shortenText === true) ? props.postContent : `${props.postContent.slice(0, 120)}...` }</p>
                 </div>
                 <div className="post-item__actions">
                     <Button inverse to={`/posts/${props.id}`}>VIEW</Button>
@@ -55,6 +56,18 @@ const Post = props => {
                     <Button danger onClick={showDeleteWarningHandler}>DELETE</Button>
                     }
                 </div>
+                {/* {props.showDetails === true 
+                ? 
+                (
+                    <div className="post-item__details">
+                        <div> post details... </div>
+                    </div>
+                )
+                :
+                (
+                    ""
+                )
+                } */}
             </Card>
         </li>
     </Fragment>

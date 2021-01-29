@@ -1,0 +1,12 @@
+.Comment {
+    max-width: 1200px;
+    margin: 0 10%;
+}
+
+.Comment__card {
+    margin: 20px auto;
+}
+
+.Comment__label {
+    font-weight: 800;
+}

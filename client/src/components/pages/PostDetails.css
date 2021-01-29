@@ -1,0 +1,22 @@
+.PostDetails {
+    max-width: 1200px;
+    margin: 0 10%;
+}
+
+.likeBtn {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.requestConfirmationMsg {
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.responseContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
